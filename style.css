@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  padding: 6px 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#errorMessage {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  min-height: 20px;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.status {
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.status-in-progress {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-completed {
+  background-color: #d1e7dd;
+  color: #0a3622;
+}
+
+.status-overdue {
+  background-color: #f8d7da;
+  color: #58151c;
+}
+
+.update-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.update-group label {
+  font-weight: normal;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.update-group select {
+  width: auto;
+  padding: 4px 6px;
+  font-size: 0.9rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
